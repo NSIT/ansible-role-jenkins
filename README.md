@@ -95,6 +95,8 @@ This role will install the latest version of Jenkins by default (using the offic
     jenkins_repo_url: deb https://pkg.jenkins.io/debian-stable binary/
     jenkins_repo_key_url: https://pkg.jenkins.io/debian-stable/jenkins.io.key
 
+You can conveniently change the defaults irrespective of the platform by setting `jenkins_prefer_lts: true`.
+
 It is also possible stop the repo file being added by setting  `jenkins_repo_url: ''`. This is useful if, for example, you sign your own packages or run internal package management (e.g. Spacewalk).
 
     jenkins_java_options: "-Djenkins.install.runSetupWizard=false"
